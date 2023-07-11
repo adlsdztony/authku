@@ -5,7 +5,7 @@ A rust library for authorization and authentication in HKU eLearning system, inc
 ### Usage
 ```rust
 #[tokio::main]
-fn main() {
+async fn main() {
     let client = authku::Client::new();
     client.login_lib("uid", "password")
         .await.unwrap();
@@ -21,4 +21,4 @@ fn main() {
 ### TODO
 - [x] portal
 - [x] library
-- [ ] moodle
+- [x] moodle
